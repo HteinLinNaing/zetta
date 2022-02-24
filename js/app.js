@@ -5,6 +5,7 @@ $(document).ready(function () {
         let navbarToggler = $(".navbar-toggler");
         let toggleIcon = $(".toggle-icon");
         let websiteLoader = $(".website-loader");
+        let nightModeIcon = $(".night-mood-icon");
 
         //WEBSITE LOADER
         $(window).on("load", function () {
@@ -19,6 +20,18 @@ $(document).ready(function () {
                 } else {
                         toggleIcon.removeClass("fa-times");
                         toggleIcon.addClass("fa-bars");
+                }
+        });
+
+        // NIGHT MODE ICON
+        nightModeIcon.click(function () {
+                $("body").toggleClass("dark");
+                if($(".night-mood-icon i").hasClass("feather-sun")) {
+                        $(".night-mood-icon i").removeClass("feather-sun");
+                        $(".night-mood-icon i").addClass("feather-moon");
+                } else {
+                        $(".night-mood-icon i").removeClass("feather-moon");
+                        $(".night-mood-icon i").addClass("feather-sun");
                 }
         });
 
@@ -69,7 +82,7 @@ $(document).ready(function () {
                     boxClass: 'wow',      // default
                     animateClass: 'animate__animated', // default
                     offset: 0,          // default
-                    mobile: true,       // default
+                    mobile: false,       // default
                     live: true        // default
             }
         )
@@ -124,8 +137,8 @@ $(document).ready(function () {
                 speed: 500,
                 fade: true,
                 cssEase: "linear",
-                autoplay: true,
-                autoplaySpeed: 3000
+                // autoplay: true,
+                // autoplaySpeed: 3000
         });
 
         // PHOTOS CAROUSEL

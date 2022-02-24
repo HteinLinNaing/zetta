@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* #5863F8 */
 :root {
-    --primary: #5863F8;
+    --primary: #ffd615;
     --dark: #222222;
     --light: #fafafa;
 }
@@ -52,7 +52,7 @@ a {
 
 .fa-times,
 .nav-menu.scroll .fa-times {
-    color: #5863F8 !important;
+    color: var(--primary) !important;
 }
 
 .toggle-icon {
@@ -66,7 +66,7 @@ a {
 .nav-link::after {
     content: "";
     width: 0%;
-    height: 2px;
+    height: 3px;
     display: block;
     background: var(--primary);
     margin: auto;
@@ -96,6 +96,23 @@ a {
     position: relative;
 }
 
+.night-mood-icon {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    cursor: pointer;
+}
+
+.night-mood-icon i {
+    color: var(--dark);
+}
+
 .quick-send {
     width: 80%;
     background: var(--light);
@@ -112,11 +129,29 @@ a {
     padding: 20px 30px;
 }
 
+.send-btn-box {
+    display: inline-block;
+}
+
+.send-btn {
+
+}
+
 .services {
     background-image: url("../img/services-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.services .card {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.services .card:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
 }
 
 .services-icon {
@@ -131,7 +166,7 @@ a {
 }
 
 .services-title {
-    height: 100px;
+    height: 90px;
 }
 
 .testi-img {
@@ -139,6 +174,17 @@ a {
     height: 70px;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.restaurant-card,
+.blog-card {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.restaurant-card:hover,
+.blog-card:hover {
+    transform: scale(0.98);
 }
 
 .contact-icon {
@@ -170,7 +216,7 @@ a {
 }
 
 .tw-icon {
-    background: #03a4c5;
+    background: #0092b0;
     animation-delay: .4s;
 }
 
@@ -180,7 +226,7 @@ a {
 }
 
 .delay-1 {
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 .delay-2 {
@@ -210,7 +256,7 @@ a {
 @media screen and (max-width: 1060px) {
 
     .services-title {
-        height: 130px;
+        height: 120px;
     }
 
 }
@@ -254,6 +300,12 @@ a {
     .check {
         display: block;
         width: 100%;
+        padding: 15px 20px;
+    }
+
+    .send-btn-box {
+        display: flex;
+        justify-content: end;
     }
 
     .services-title {
@@ -276,12 +328,12 @@ a {
 
     .nav-link.current {
         background: var(--primary);
-        color: var(--light) !important;
+        color: var(--dark) !important;
     }
 
     .nav-menu.scroll .nav-link.current {
         background: var(--primary);
-        color: var(--light) !important;
+        color: var(--dark) !important;
     }
 
     .restaurant-card {
@@ -291,6 +343,10 @@ a {
     .restaurant-card img {
         width: 100%;
         height: 100%;
+    }
+
+    .services-title {
+        height: 60px;
     }
 
 }

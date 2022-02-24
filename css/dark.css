@@ -1,0 +1,228 @@
+:root {
+    --dark-primary: #ffd615;
+    --dark: #222222;
+    --half-dark: #333333;
+    --soft-dark: #666666;
+    --dark-light: #e6e6e6;
+}
+
+.dark .dark-primary {
+    color: var(--dark-primary) !important;
+}
+
+.dark .dark-bg-primary {
+    background: var(--dark-primary) !important;
+    border: none !important;
+}
+
+.dark .dark-text {
+    color: var(--dark-light) !important;
+}
+
+/* Navbar */
+
+.dark .nav-menu.scroll {
+    background: var(--soft-dark) !important;
+}
+
+.dark .fa-times {
+    color: var(--dark-primary) !important;
+}
+
+.dark .nav-menu.scroll .fa-times {
+    color: var(--dark-primary) !important;
+}
+
+.dark .nav-link::after {
+    background: var(--dark-primary) !important;
+}
+
+.dark .night-mood-icon {
+    background: var(--dark-primary);
+}
+
+@media screen and (max-width: 780px) {
+    .dark .nav-link.current {
+        color: var(--dark-primary) !important;
+    }
+
+    .dark .nav-menu.scroll .nav-link.current {
+        color: var(--dark-primary) !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dark .nav-link.current {
+        background: var(--dark-primary);
+        color: var(--dark) !important;
+    }
+
+    .dark .nav-menu.scroll .nav-link.current {
+        background: var(--dark-primary);
+        color: var(--dark) !important;
+    }
+}
+
+/* Quick Send */
+
+.dark .quick-send {
+    background: var(--dark);
+}
+
+.dark .quick-send form .check label {
+    color: var(--dark-primary) !important;
+}
+
+.dark .quick-send form .check input {
+    background: var(--soft-dark) !important;
+    border: none !important;
+    color: var(--dark-light);
+}
+
+.dark .quick-send form .check input::placeholder{
+    color: var(--dark-light) !important;
+}
+
+.dark .quick-send form .send-btn {
+    background: var(--dark-primary) !important;
+    border: none !important;
+}
+
+.dark .quick-send form .send-btn i {
+    color: var(--dark);
+}
+
+/* About */
+
+.dark .about {
+    background: var(--half-dark);
+}
+
+.dark .about button {
+    background: var(--dark-primary) !important;
+    border: none !important;
+    color: var(--dark);
+}
+
+.dark .about button i {
+    color: var(--dark);
+}
+
+/* Services */
+
+.dark .services .card {
+    background: var(--half-dark) !important;
+}
+
+.dark .services .card .services-icon {
+    background: var(--dark-primary) ;
+}
+
+.dark .services .slick-prev,
+.dark .services .slick-next {
+    background: var(--half-dark) !important;
+}
+
+.dark .slick-prev:before,
+.dark .slick-next:before {
+    color: var(--dark-primary) !important;
+}
+
+.dark .services .slick-dots li button:before {
+    color: var(--dark-primary) !important;
+    border-color: var(--dark-primary) !important;
+}
+
+.dark .services .slick-dots li.slick-active button:before {
+    color: var(--dark-primary) !important;
+    background: var(--dark-primary) !important;
+}
+
+/* Testimonial */
+
+.dark .testimonial {
+    background: var(--half-dark) !important;
+}
+
+.dark .testimonial .slick-dots li button:before {
+    color: var(--dark-primary) !important;
+    border-color: var(--dark-primary) !important;
+}
+
+.dark .testimonial .slick-dots li.slick-active button:before {
+    color: var(--dark-primary) !important;
+    background: var(--dark-primary) !important;
+}
+
+/* Restaurant */
+
+.dark .restaurant {
+    background: var(--dark);
+}
+
+.dark .restaurant .restaurant-card {
+    background: var(--soft-dark) !important;
+}
+
+.dark .restaurant .restaurant-card h6:nth-child(1) {
+    color: var(--dark-primary) !important;
+}
+
+.dark .restaurant .restaurant-card p {
+    color: var(--dark-light) !important;
+}
+
+.dark .restaurant .restaurant-card button,
+.dark .restaurant .restaurant-card button i {
+    color: var(--dark);
+}
+
+/* Blog */
+
+.dark .blog {
+    background: var(--half-dark) !important;
+}
+
+.dark .blog .blog-card {
+    background: var(--soft-dark);
+}
+
+.dark .blog .blog-card p {
+    color: var(--dark-light) !important;
+}
+
+/* Contact */
+
+.dark .contact {
+    background: var(--dark) !important;
+}
+
+.dark .contact input,
+.dark .contact textarea {
+    background: var(--half-dark) !important;
+    color: var(--dark-light) !important;
+    border-color: var(--soft-dark) !important;
+}
+
+.dark .contact button {
+    color: var(--dark) !important;
+}
+
+.dark .contact .contact-icon {
+    background: var(--dark-primary) !important;
+}
+
+.dark .contact .contact-icon i {
+    color: var(--dark) !important;
+}
+
+/* Photo */
+
+.dark .photo {
+    background: var(--half-dark) !important;
+}
+
+.dark .photo .img-thumbnail {
+    background: var(--dark-primary) !important;
+    border-color: var(--dark) !important;
+}

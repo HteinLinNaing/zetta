@@ -21,7 +21,7 @@
     <meta property="og:title" content="Zetta Hotel">
     <meta property="og:description" content="Zetta - Our hotel is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.
     Developed by Htein Lin Naing">
-    <meta property="og:image" content="./img/website.png">
+    <meta property="og:image" content="https://hteinlinnaing.github.io/zetta/img/website.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -29,7 +29,7 @@
     <meta property="twitter:title" content="Zetta Hotel">
     <meta property="twitter:description" content="Zetta - Our hotel is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.
     Developed by Htein Lin Naing">
-    <meta property="twitter:image" content="./img/website.png">
+    <meta property="twitter:image" content="https://hteinlinnaing.github.io/zetta/img/website.png">
 
     <!--    WEBSITE LOADER CSS-->
     <style>
@@ -160,11 +160,12 @@
     <link rel="stylesheet" href="./vendor/feather_icons/feather.css">
     <link rel="stylesheet" href="./vendor/animate_it/animate.min.css">
     <link rel="stylesheet" href="./vendor/slick/slick.css">
-    <link rel="stylesheet" href="./vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark.css">
 </head>
 
-<body>
+<body class="">
 
 <!-- WEBSITE LOADER -->
 <div class="website-loader">
@@ -210,7 +211,12 @@
                                 <a class="nav-link px-3" href="#blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ps-3 pe-0" href="#contact">Contact</a>
+                                <a class="nav-link px-3" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="night-mood-icon nav-link ms-3 ms-lg-0">
+                                    <i class="feather-sun"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -250,7 +256,9 @@
             <label for="room" class="text-primary mb-2">Rooms</label>
             <input type="text" class="form-control bg-light" id="room" placeholder="Rooms">
         </div>
-        <button class="btn btn-primary"><i class="feather-send"></i></button>
+        <div class="send-btn-box">
+            <button class="send-btn btn btn-primary"><i class="feather-send"></i></button>
+        </div>
     </form>
 </div>
 
@@ -259,14 +267,14 @@
         <div class="row min-vh-100 align-items-center py-5 py-lg-0">
             <div class="col-12 col-lg-6">
                 <div class="pt-5 pt-lg-0 mt-5 mt-lg-0">
-                    <p class="text-primary wow animate__fadeInUp delay-1">About</p>
-                    <h1 class="fw-bold mb-4 wow animate__fadeInUp delay-1">Trust and quality <br> are our atuus</h1>
-                    <p class="wow animate__fadeInUp delay-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class="dark-primary text-primary fw-bold wow animate__fadeInUp delay-1">About</p>
+                    <h1 class="dark-text fw-bold mb-4 wow animate__fadeInUp delay-1">Trust and quality <br> are our atuus</h1>
+                    <p class="dark-text wow animate__fadeInUp delay-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-                    <p class="fw-light wow animate__fadeInUp delay-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="dark-text fw-light wow animate__fadeInUp delay-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button class="btn btn-primary px-3 mb-3 wow animate__fadeInUp delay-1">See More <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn btn-primary px-3 mb-3 wow animate__fadeInUp delay-1">See More <i class="feather-chevrons-right"></i></button>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -282,8 +290,8 @@
     <div class="container min-vh-100 py-2">
         <div class="row">
             <div class="col-12 pt-5">
-                <p class="text-primary wow animate__fadeInUp delay-1">Services</p>
-                <h1 class="fw-bold mb-4 text-white wow animate__fadeInUp delay-1">We bring you the <br> finest details</h1>
+                <p class="dark-primary text-primary fw-bold wow animate__fadeInUp delay-1">Services</p>
+                <h1 class="dark-text fw-bold mb-4 text-white wow animate__fadeInUp delay-1">We bring you the <br> finest details</h1>
             </div>
         </div>
         <div class="row services-slide">
@@ -291,9 +299,9 @@
                 <div class="card mx-3 mx-md-2 mb-3 wow animate__fadeInUp delay-1">
                     <div class="card-body text-center">
                         <div class="services-icon mb-3">
-                            <i class="fas fa-wifi fa-2x"></i>
+                            <i class="feather-wifi fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">Free Wifi to stay connected</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">Free Wifi to stay connected</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -303,9 +311,9 @@
                 <div class="card mx-3 mx-md-2 mb-3 wow animate__fadeInUp delay-1">
                     <div class="card-body text-center">
                         <div class="services-icon mb-3">
-                            <i class="fas fa-tv  fa-2x"></i>
+                            <i class="feather-monitor fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">4K Television & Netflix included</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">4K Television & Netflix included</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -317,7 +325,7 @@
                         <div class="services-icon mb-3">
                             <i class="fas fa-swimming-pool fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">Span Zone where you can chill</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">Span Zone where you can chill</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -329,7 +337,7 @@
                         <div class="services-icon mb-3">
                             <i class="fas fa-glass-cheers fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">Spacious Room for Awesome Parties</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">Spacious Room for Awesome Parties</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -340,9 +348,9 @@
                 <div class="card mx-3 mx-md-2 mb-3 wow animate__fadeInUp delay-1">
                     <div class="card-body text-center">
                         <div class="services-icon mb-3">
-                            <i class="fas fa-wifi fa-2x"></i>
+                            <i class="feather-wifi fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">Free Wifi to stay connected</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">Free Wifi to stay connected</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -352,9 +360,9 @@
                 <div class="card mx-3 mx-md-2 mb-3 wow animate__fadeInUp delay-1">
                     <div class="card-body text-center">
                         <div class="services-icon mb-3">
-                            <i class="fas fa-tv  fa-2x"></i>
+                            <i class="feather-monitor  fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">4K Television & Netflix included</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">4K Television & Netflix included</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -366,7 +374,7 @@
                         <div class="services-icon mb-3">
                             <i class="fas fa-swimming-pool fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">Span Zone where you can chill</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">Span Zone where you can chill</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -378,7 +386,7 @@
                         <div class="services-icon mb-3">
                             <i class="fas fa-glass-cheers fa-2x"></i>
                         </div>
-                        <h5 class="fw-bold mb-3 services-title">Spacious Room for Awesome Parties</h5>
+                        <h5 class="dark-text fw-bold mb-2 services-title">Spacious Room for Awesome Parties</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -392,8 +400,8 @@
     <div class="container">
         <div class="row py-5">
             <div class="col-12">
-                <p class="text-primary wow animate__fadeInUp delay-1">Testimonial</p>
-                <h1 class="fw-bold mb-4 wow animate__fadeInUp delay-1">We trust our customers <br class="d-none d-md-block"> and they trust us too</h1>
+                <p class="dark-primary text-primary fw-bold wow animate__fadeInUp delay-1">Testimonial</p>
+                <h1 class="dark-text fw-bold mb-4 wow animate__fadeInUp delay-1">We trust our customers <br class="d-none d-md-block"> and they trust us too</h1>
             </div>
             <div class="col-12">
                 <div class="d-flex justify-content-center pb-5 testi-slide wow animate__fadeInUp delay-1">
@@ -402,12 +410,12 @@
                             <div class="">
                                 <img src="./img/photo-4.jpg" class="testi-img" alt="">
                             </div>
-                            <div class="">
+                            <div class="dark-text">
                                 <h5>John Doe</h5>
                                 <p>IT Engineer</p>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body dark-text">
                             <p>I'm very glad I had the opportunity to visit this hotel. The stuff is very friendly and I will definetly visit the hotel again next year.
                             </p>
                         </div>
@@ -417,12 +425,12 @@
                             <div class="">
                                 <img src="./img/photo-2.jpg" class="testi-img" alt="">
                             </div>
-                            <div class="">
+                            <div class="dark-text">
                                 <h5>Jame Smith</h5>
                                 <p>Web Developer</p>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body dark-text">
                             <p>I'm very glad I had the opportunity to visit this hotel. The stuff is very friendly and I will definetly visit the hotel again next year. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequatur!
                             </p>
                         </div>
@@ -432,12 +440,12 @@
                             <div class="">
                                 <img src="./img/photo-3.jpg" class="testi-img" alt="">
                             </div>
-                            <div class="">
+                            <div class="dark-text">
                                 <h5>Danial</h5>
                                 <p>Software Engineer</p>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body dark-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis delectus eum harum id molestiae neque nihil nobis placeat, quae quam quod rem rerum similique sunt voluptate! Consequatur est mollitia reprehenderit.
                             </p>
                         </div>
@@ -453,63 +461,64 @@
         <div class="row min-vh-100 py-5">
             <div class="col-12">
                 <div class="pt-4">
-                    <p class="text-primary wow animate__fadeInUp delay-1">Restaurant</p>
-                    <h1 class="fw-bold mb-4 wow animate__fadeInUp delay-1">Explore our menu <br> and eat what you want</h1>
+                    <p class="dark-primary text-primary fw-bold wow animate__fadeInUp delay-1">Restaurant</p>
+                    <h1 class="dark-text fw-bold mb-4 wow animate__fadeInUp delay-1">Explore our menu <br> and eat what you want</h1>
                 </div>
             </div>
+
             <div class="col-12 col-lg-6">
                 <div class="d-flex bg-light shadow mb-3 restaurant-card wow animate__fadeInUp delay-1">
                     <img src="./img/restaurant-1.jpg" class="img-fluid me-3" alt="">
-                    <div class="">
+                    <div class="p-3 p-md-0">
                         <h6 class="text-primary fw-bold pt-2">FOOD</h6>
                         <h6 class="fw-bold">Fresh Fish and Onions</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                     <div class="d-flex align-items-end justify-content-end">
-                        <button class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                        <button class="btn btn-primary dark-bg-primary"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="d-flex bg-light shadow mb-3 restaurant-card wow animate__fadeInUp delay-1">
                     <img src="./img/restaurant-2.jpg" class="img-fluid me-3" alt="">
-                    <div class="">
+                    <div class="p-3 p-md-0">
                         <h6 class="text-primary fw-bold pt-2">FOOD</h6>
                         <h6 class="fw-bold">Fresh Fish and Onions</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                     <div class="d-flex align-items-end justify-content-end">
-                        <button class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                        <button class="btn btn-primary dark-bg-primary"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="d-flex bg-light shadow mb-3 restaurant-card wow animate__fadeInUp delay-1">
                     <img src="./img/restaurant-2.jpg" class="img-fluid me-3" alt="">
-                    <div class="">
+                    <div class="p-3 p-md-0">
                         <h6 class="text-primary fw-bold pt-2">FOOD</h6>
                         <h6 class="fw-bold">Fresh Fish and Onions</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                     <div class="d-flex align-items-end justify-content-end">
-                        <button class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                        <button class="btn btn-primary dark-bg-primary"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="d-flex bg-light shadow mb-3 restaurant-card wow animate__fadeInUp delay-1">
                     <img src="./img/restaurant-1.jpg" class="img-fluid me-3" alt="">
-                    <div class="">
+                    <div class="p-3 p-md-0">
                         <h6 class="text-primary fw-bold pt-2">FOOD</h6>
                         <h6 class="fw-bold">Fresh Fish and Onions</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                     <div class="d-flex align-items-end justify-content-end">
-                        <button class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                        <button class="btn btn-primary dark-bg-primary"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -522,72 +531,72 @@
         <div class="row min-vh-100 py-5">
             <div class="col-12">
                 <div class="pt-4">
-                    <p class="text-primary wow animate__fadeInUp delay-1">Blog</p>
-                    <h1 class="fw-bold mb-4 wow animate__fadeInUp delay-1">Read our newest blog <br> post right away</h1>
+                    <p class="dark-primary text-primary fw-bold wow animate__fadeInUp delay-1">Blog</p>
+                    <h1 class="dark-text fw-bold mb-4 wow animate__fadeInUp delay-1">Read our newest blog <br> post right away</h1>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="shadow mb-4 wow animate__fadeInUp delay-1">
+                <div class="blog-card shadow mb-4 wow animate__fadeInUp delay-1">
                     <img src="./img/blog-1.jpg" class="img-fluid w-100" alt="">
                     <div class="text-center p-3">
                         <h6 class="text-primary fw-bold pt-2">Food and Life</h6>
                         <h6 class="fw-bold">Succed in Hotel Business</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="shadow mb-4 wow animate__fadeInUp delay-1">
+                <div class="blog-card shadow mb-4 wow animate__fadeInUp delay-1">
                     <img src="./img/blog-2.jpg" class="img-fluid w-100" alt="">
                     <div class="text-center p-3">
                         <h6 class="text-primary fw-bold pt-2">Food and Life</h6>
                         <h6 class="fw-bold">Succed in Hotel Business</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="shadow mb-4 wow animate__fadeInUp delay-1">
+                <div class="blog-card shadow mb-4 wow animate__fadeInUp delay-1">
                     <img src="./img/blog-3.jpg" class="img-fluid w-100" alt="">
                     <div class="text-center p-3">
                         <h6 class="text-primary fw-bold pt-2">Food and Life</h6>
                         <h6 class="fw-bold">Succed in Hotel Business</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="shadow mb-4 wow animate__fadeInUp delay-1">
+                <div class="blog-card shadow mb-4 wow animate__fadeInUp delay-1">
                     <img src="./img/blog-3.jpg" class="img-fluid w-100" alt="">
                     <div class="text-center p-3">
                         <h6 class="text-primary fw-bold pt-2">Food and Life</h6>
                         <h6 class="fw-bold">Succed in Hotel Business</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="shadow mb-4 wow animate__fadeInUp delay-1">
+                <div class="blog-card shadow mb-4 wow animate__fadeInUp delay-1">
                     <img src="./img/blog-2.jpg" class="img-fluid w-100" alt="">
                     <div class="text-center p-3">
                         <h6 class="text-primary fw-bold pt-2">Food and Life</h6>
                         <h6 class="fw-bold">Succed in Hotel Business</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="shadow mb-4 wow animate__fadeInUp delay-1">
+                <div class="blog-card shadow mb-4 wow animate__fadeInUp delay-1">
                     <img src="./img/blog-1.jpg" class="img-fluid w-100" alt="">
                     <div class="text-center p-3">
                         <h6 class="text-primary fw-bold pt-2">Food and Life</h6>
                         <h6 class="fw-bold">Succed in Hotel Business</h6>
-                        <p>Fresh food directly from our restaurant ready coocked for you and your familly
+                        <p class="text-black-50">Fresh food directly from our restaurant ready coocked for you and your familly
                         </p>
                     </div>
                 </div>
@@ -601,8 +610,8 @@
         <div class="row min-vh-100 py-5">
             <div class="col-12">
                 <div class="pt-4">
-                    <p class="text-primary wow animate__fadeInUp delay-1">Contact</p>
-                    <h1 class="fw-bold mb-4 wow animate__fadeInUp delay-1">Contact Us To Get <br> Free Support</h1>
+                    <p class="dark-primary text-primary fw-bold wow animate__fadeInUp delay-1">Contact</p>
+                    <h1 class="dark-text fw-bold mb-4 wow animate__fadeInUp delay-1">Contact Us To Get <br> Free Support</h1>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-8">
@@ -621,7 +630,7 @@
                     <input type="email" class="form-control bg-light" placeholder="Email">
                 </div>
                 <div class="mb-3 wow animate__fadeInUp delay-3">
-                    <button class="btn btn-primary w-100">Send <i class="feather-send"></i></button>
+                    <button class="btn dark-bg-primary btn-primary w-100">Send <i class="feather-send"></i></button>
                 </div>
             </div>
             <div class="col-12">
@@ -630,21 +639,21 @@
                         <div class="contact-icon wow animate__fadeInUp delay-1">
                             <i class="fas fa-envelope text-white"></i>
                         </div>
-                        <h5 class="mt-3 wow animate__fadeInUp delay-1">Email</h5>
+                        <h5 class="dark-text mt-3 wow animate__fadeInUp delay-1">Email</h5>
                         <p class="text-muted wow animate__fadeInUp delay-1">example@gmail.com</p>
                     </div>
                     <div class="text-center">
                         <div class="contact-icon wow animate__fadeInUp delay-1">
                             <i class="fas fa-phone-alt text-white"></i>
                         </div>
-                        <h5 class="mt-3 wow animate__fadeInUp delay-1">Phone</h5>
+                        <h5 class="dark-text mt-3 wow animate__fadeInUp delay-1">Phone</h5>
                         <p class="text-muted wow animate__fadeInUp delay-1">+959 770 982 115</p>
                     </div>
                     <div class="text-center">
                         <div class="contact-icon wow animate__fadeInUp delay-1">
                             <i class="fas fa-map-marked-alt text-white"></i>
                         </div>
-                        <h5 class="mt-3 wow animate__fadeInUp delay-1">Location</h5>
+                        <h5 class="dark-text mt-3 wow animate__fadeInUp delay-1">Location</h5>
                         <p class="text-muted wow animate__fadeInUp delay-1">Yangon, Myanmar</p>
                     </div>
                 </div>
@@ -658,8 +667,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="">
-                    <p class="text-primary text-uppercase wow animate__fadeInUp delay-1">Photos</p>
-                    <h1 class="fw-bold mb-4 wow animate__fadeInUp delay-1">See Ours Lastest Photos <br> From Restaurant and Hotel</h1>
+                    <p class="dark-primary text-primary text-uppercase wow animate__fadeInUp delay-1">Photos</p>
+                    <h1 class="dark-text fw-bold mb-4 wow animate__fadeInUp delay-1">See Ours Lastest Photos <br> From Restaurant and Hotel</h1>
                 </div>
             </div>
         </div>
@@ -715,7 +724,7 @@
         <div class="row pt-5">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="mb-5 text-center text-md-start">
-                    <h4 class="text-primary mb-3">Zetta Hotel</h4>
+                    <h4 class="dark-primary text-primary mb-3">Zetta Hotel</h4>
                     <p class="text-white-50 mb-4">Our hotel is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.</p>
                     <div class="social-icon d-flex justify-content-center justify-content-md-start">
                         <div class="fb-icon me-3">
@@ -734,19 +743,19 @@
                 <div class="mb-5">
                     <ul class="ps-0 ps-lg-4 text-center text-md-start">
                         <li>
-                            <h5 class="text-white">Useful Links</h5>
+                            <h5 class="dark-text text-light">Useful Links</h5>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Blog</a>
+                            <a href="#" class="dark-primary text-primary">Blog</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Rooms</a>
+                            <a href="#" class="dark-primary text-primary">Rooms</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Gift Card</a>
+                            <a href="#" class="dark-primary text-primary">Gift Card</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Testimonials</a>
+                            <a href="#" class="dark-primary text-primary">Testimonials</a>
                         </li>
                     </ul>
                 </div>
@@ -755,19 +764,19 @@
                 <div class="mb-5">
                     <ul class="ps-0 ps-lg-4 text-center text-md-start">
                         <li>
-                            <h5 class="text-white">Privacy</h5>
+                            <h5 class="dark-text text-light">Privacy</h5>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Career</a>
+                            <a href="#" class="dark-primary text-primary">Career</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">About Us</a>
+                            <a href="#" class="dark-primary text-primary">About Us</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Contact Us</a>
+                            <a href="#" class="dark-primary text-primary">Contact Us</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-primary">Services</a>
+                            <a href="#" class="dark-primary text-primary">Services</a>
                         </li>
                     </ul>
                 </div>
@@ -776,19 +785,19 @@
                 <div class="mb-5">
                     <ul class="ps-0 ps-lg-4 text-center text-md-start">
                         <li>
-                            <h5 class="text-white mb-3">Contact Info</h5>
+                            <h5 class="dark-text text-light mb-3">Contact Info</h5>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-envelope text-primary"></i>
-                            <a href="#"> example@gmail.com</a>
+                            <i class="fas fa-envelope dark-primary text-primary"></i>
+                            <a href="#" class="dark-text text-light"> example@gmail.com</a>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-phone-alt text-primary"></i>
-                            <a href="#"> +959 770 982 115</a>
+                            <i class="fas fa-phone-alt dark-primary text-primary"></i>
+                            <a href="#" class="dark-text text-light"> +959 770 982 115</a>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-map-marker-alt text-primary"></i>
-                            <a href="#"> Yangon, Myanmar</a>
+                            <i class="fas fa-map-marker-alt dark-primary text-primary"></i>
+                            <a href="#" class="dark-text text-light"> Yangon, Myanmar</a>
                         </li>
                     </ul>
                 </div>
@@ -797,12 +806,12 @@
         <div class="row pb-3">
             <div class="col-12 col-md-7">
                 <div class="">
-                    <p class="text-white text-center text-md-start">Copyright &copy; 2022 All Right Reserved.</p>
+                    <p class="dark-text text-light text-center text-md-start">Copyright &copy; 2022 All Right Reserved.</p>
                 </div>
             </div>
             <div class="col-12 col-md-5">
                 <div class="">
-                    <p class="text-white text-center text-md-end">Made with love by <span class="text-primary fw-bold">HLN</span></p>
+                    <p class="dark-text text-light text-center text-md-end">Made with love by <span class="dark-primary text-primary fw-bold">HLN</span></p>
                 </div>
             </div>
         </div>
