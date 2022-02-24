@@ -9,7 +9,9 @@ $(document).ready(function () {
 
         //WEBSITE LOADER
         $(window).on("load", function () {
-                websiteLoader.fadeOut(500);
+                websiteLoader.fadeOut(500,function(){
+                        websiteLoader.remove();
+                });
         });
 
         //MENU ICON CHANGE ON CLICK
